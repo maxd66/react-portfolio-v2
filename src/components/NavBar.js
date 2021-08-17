@@ -1,8 +1,11 @@
-const NavTabs = require("./NavTabs");
+// const NavTabs = require("./NavTabs");
 
 function NavBar() {
-  <NavTabs />;
-  return;
+  return (
+    <nav>
+      <h1>Maxwell Dunn</h1>
+    </nav>
+  );
 }
 
 export default NavBar;
