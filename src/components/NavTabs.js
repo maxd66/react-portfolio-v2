@@ -1,4 +1,4 @@
-function NavTabs([currentPage, handlePageChange]) {
+function NavTabs({ currentPage, handlePageChange }) {
   return;
 }
 
