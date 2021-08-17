@@ -1,10 +1,10 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import PageContainer from "./components/PageContainer";
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <PageContainer />
       <h1>This is a React Page</h1>
       <p>I hope it goes well</p>
     </div>
