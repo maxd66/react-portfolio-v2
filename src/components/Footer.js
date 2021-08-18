@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer>
-      <p>footer text</p>
-    </footer>
+    <div className="footer">
+      <p className="centerFoot">footer text</p>
+    </div>
   );
 }
 

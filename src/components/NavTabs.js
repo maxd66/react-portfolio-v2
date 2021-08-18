@@ -16,10 +16,10 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#portfolio"
           onClick={() => {
-            handlePageChange("Porfolio");
+            handlePageChange("Portfolio");
           }}
           className={
-            currentPage === "Porfolio" ? "nav-link active" : "nav-link"
+            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
           }
         >
           Porfolio
