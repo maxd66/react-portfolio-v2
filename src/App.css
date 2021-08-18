@@ -1,4 +1,4 @@
-/* Styles for the nav bar */
+/*-------------------- Styles for the nav bar */
 
 nav {
   height: 200px;
@@ -47,5 +47,23 @@ nav li {
 
   nav ul {
     padding: 0px 10% 0px 0px;
+  }
+}
+
+/*------------------------------ Style for Home page */
+
+.aboutHeader {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.aboutText {
+  text-align: center;
+  margin: 10px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutText {
+    margin: 10px 20%;
   }
 }
