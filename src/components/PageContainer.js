@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Footer from "./Footer";
 
 function NavBar() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -36,6 +37,7 @@ function NavBar() {
         />
       </nav>
       {renderPage()}
+      <Footer />
     </div>
   );
 }
