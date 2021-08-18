@@ -1,24 +1,28 @@
 import NavTabs from "./NavTabs";
 import React, { useState } from "react";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 function NavBar() {
   const [currentPage, setCurrentPage] = useState("Home");
 
-  // const renderPage = () => {
-  //   switch (currentPage) {
-  //     case "Home":
-  //       return <Home />;
+  const renderPage = () => {
+    switch (currentPage) {
+      case "Home":
+        return <Home />;
 
-  //     case "About":
-  //       return <About />;
+      case "Portfolio":
+        return <Portfolio />;
 
-  //     case "Blog":
-  //       return <Blog />;
+      case "Contact":
+        return <Contact />;
 
-  //     default:
-  //       return <Contact />;
-  //   }
-  // };
+      default:
+        return <Resume />;
+    }
+  };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
@@ -31,7 +35,7 @@ function NavBar() {
           handlePageChange={handlePageChange}
         />
       </nav>
-      {/* {renderPage()} */}
+      {renderPage()}
     </div>
   );
 }
