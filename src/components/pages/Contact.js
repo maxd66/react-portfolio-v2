@@ -1,20 +1,53 @@
+import React, { useState } from "react";
+
 function Contact() {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+  let mailLink = `mailto:max.dunn63@gmail.com?subject=${userName} - ${userEmail}&body=${userMessage}`;
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === "userEmail") {
+      setUserEmail(inputValue);
+    } else if (inputType === "userName") {
+      setUserName(inputValue);
+    } else {
+      setUserMessage(inputValue);
+    }
+  };
+
   return (
-    <form
-      action="mailto:max.dunn63@gmail.com"
-      method="POST"
-      encType="multipart/form-data"
-      name="EmailForm"
-    >
+    <form name="EmailForm" id="emailForm">
       <label for="userName">Name:</label>
-      <input type="text" name="userName" id="userName" />
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        onChange={handleInputChange}
+      />
       <label for="userEmail">Email:</label>
-      <input type="email" name="userEmail" id="userEmail" />
+      <input
+        type="email"
+        name="userEmail"
+        id="userEmail"
+        onChange={handleInputChange}
+      />
       <label for="userMessage">Message:</label>
-      <textarea name="userMessage" id="userMessage" rows="6"></textarea>
-      <button type="submit" value="Submit">
+      <textarea
+        name="userMessage"
+        id="userMessage"
+        rows="6"
+        onChange={handleInputChange}
+      ></textarea>
+      <a href={mailLink} id="mailLink">
         Send
-      </button>
+      </a>
     </form>
   );
 }
