@@ -2,7 +2,11 @@ function Resume() {
   return (
     <div>
       <h2>
-        <a href="#resume" className="resumeTitle">
+        <a
+          href={process.env.PUBLIC_URL + "/resume-2021-07-22.pdf"}
+          download
+          className="resumeTitle"
+        >
           Download My Full Resume
         </a>
       </h2>

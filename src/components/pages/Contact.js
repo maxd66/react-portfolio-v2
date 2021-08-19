@@ -24,27 +24,33 @@ function Contact() {
 
   return (
     <form name="EmailForm" id="emailForm">
-      <label for="userName">Name:</label>
-      <input
-        type="text"
-        name="userName"
-        id="userName"
-        onChange={handleInputChange}
-      />
-      <label for="userEmail">Email:</label>
-      <input
-        type="email"
-        name="userEmail"
-        id="userEmail"
-        onChange={handleInputChange}
-      />
-      <label for="userMessage">Message:</label>
-      <textarea
-        name="userMessage"
-        id="userMessage"
-        rows="6"
-        onChange={handleInputChange}
-      ></textarea>
+      <div className="stacked">
+        <label for="userName">Name:</label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="stacked">
+        <label for="userEmail">Email:</label>
+        <input
+          type="email"
+          name="userEmail"
+          id="userEmail"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="stacked">
+        <label for="userMessage">Message:</label>
+        <textarea
+          name="userMessage"
+          id="userMessage"
+          rows="6"
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
       <a href={mailLink} id="mailLink">
         Send
       </a>

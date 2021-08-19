@@ -18,7 +18,9 @@ function Portfolio() {
             <img id="main-img" src={kodeKeepers} alt="kode keeper logo" />
           </a>
           <figcaption>
-            <h3>Kode Keeper</h3>
+            <h3>
+              Kode Keeper <a href="#ghublink">Repo</a>
+            </h3>
           </figcaption>
         </section>
         <section class="img2">
