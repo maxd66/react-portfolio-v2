@@ -10,10 +10,19 @@ function Home() {
         </span>
       </p>
       <p className="aboutText">
-        Lorem Ipsum dolor this is not autocompleting anymore so I am just
-        putting random text to take up as much space as possible. My typing
-        definitely needs some improvement and I could really use some assistance
-        in this area of my life.
+        Hey there! My name is Maxwell Dunn and I am a Full Stack Web Developer.
+        For as long as I can remember, I have loved learning something new.
+        Whether it be yoyoing, drawing, card magic, building computers, playing
+        football, or becoming a neuroscientist, if I wanted it, I made it
+        happen. And like many others, I also had a love for software and
+        technology. The amalgamation of creativity, math, critical thinking, and
+        effort excited me, but I recently found out that it wasn’t a pipe dream
+        and it wasn’t impossible to make that love for programming into a
+        successful and respectable career. I won’t bore you with my life story,
+        and explain how we got here today. All that matters now is that my name
+        is Maxwell Dunn, and I am a programmer. With my skills, work ethic,
+        drive, and desire to learn, what I accomplish next is simply a matter of
+        decision.
       </p>
     </div>
   );
