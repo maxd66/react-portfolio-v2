@@ -5,7 +5,7 @@ function Resume() {
         <a
           href={process.env.PUBLIC_URL + "/resume-2021-07-22.pdf"}
           download
-          className="resumeTitle"
+          className="resumeLink"
         >
           Download My Full Resume
         </a>

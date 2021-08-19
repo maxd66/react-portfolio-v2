@@ -19,7 +19,13 @@ function Portfolio() {
           </a>
           <figcaption>
             <h3>
-              Kode Keeper <a href="#ghublink">Repo</a>
+              Kode Keeper{" "}
+              <a
+                href="https://github.com/m-car/Kode-Keeper"
+                className="repoLink"
+              >
+                Repo
+              </a>
             </h3>
           </figcaption>
         </section>
@@ -32,7 +38,15 @@ function Portfolio() {
             <img src={questionMarks} alt="colorful question marks" />
           </a>
           <figcaption>
-            <h3>Coding Quiz</h3>
+            <h3>
+              Coding Quiz{" "}
+              <a
+                href="https://github.com/maxd66/code-quiz-1"
+                className="repoLink"
+              >
+                Repo
+              </a>
+            </h3>
           </figcaption>
         </section>
         <section class="img3">
@@ -44,7 +58,15 @@ function Portfolio() {
             <img src={bitcoin} alt="Bitcoin logo with geometric design" />
           </a>
           <figcaption>
-            <h3>Crypto Launch</h3>
+            <h3>
+              Crypto Launch{" "}
+              <a
+                href="https://github.com/m-car/crypto-launchpad"
+                className="repoLink"
+              >
+                Repo
+              </a>
+            </h3>
           </figcaption>
         </section>
         <section class="img4">
@@ -56,7 +78,15 @@ function Portfolio() {
             <img src={weather} alt="ocean and clouds" />
           </a>
           <figcaption>
-            <h3>Weather Dashboard</h3>
+            <h3>
+              Weather Dashboard{" "}
+              <a
+                href="https://github.com/maxd66/weather-dashboard"
+                className="repoLink"
+              >
+                Repo
+              </a>
+            </h3>
           </figcaption>
         </section>
         <section class="img5">
@@ -68,7 +98,15 @@ function Portfolio() {
             <img src={calendar} alt="calendar" />
           </a>
           <figcaption>
-            <h3>Day Planner</h3>
+            <h3>
+              Day Planner{" "}
+              <a
+                href="https://github.com/maxd66/day-planner"
+                className="repoLink"
+              >
+                Repo
+              </a>
+            </h3>
           </figcaption>
         </section>
       </div>
