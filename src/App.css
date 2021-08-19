@@ -1,8 +1,14 @@
 /*-------------------- Styles for the nav bar */
+body {
+  background-color: #01295f;
+  color: white;
+}
 
 nav {
   height: 200px;
-  background: red;
+  background-image: url("./images/react-bg.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +31,8 @@ nav li {
 
 .nav-link {
   text-decoration: none;
-  color: blue;
+  color: #fd151b;
+  text-shadow: 1px 1px darkred;
 }
 
 .active {
@@ -72,8 +79,70 @@ nav li {
 
 /* ------------------Footer style */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 .footer {
-  text-align: center;
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social_links {
+  padding: 1rem;
+  background: #383838;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social_links .combo {
+  transform: scale(0.9);
+  transition: 0.4s ease-in;
+  margin: 0 0.5rem;
+  height: 3em;
+  width: 3em;
+  line-height: 3em;
+}
+.combo .circle {
+  color: #f9f9f9;
+  transition: 0.4s ease-in;
+  font-size: 3em;
+}
+.combo .icon {
+  color: #444343;
+  font-size: 2rem;
+  transform: translateY(1px);
+  transition: 0.2s ease-in;
+}
+.combo:hover {
+  transform: scale(1.1);
+}
+.combo:hover,
+.combo:hover .icon {
+  color: white;
+}
+.ig:hover,
+.ig:hover .circle {
+  color: #e91e63;
+}
+.fb:hover,
+.fb:hover .circle {
+  color: #2196f3;
+}
+.yt:hover,
+.yt:hover .circle {
+  color: #f44336;
+}
+.tw:hover,
+.tw:hover .circle {
+  color: #2196f3;
+}
+.gt:hover,
+.gt:hover .circle {
+  color: #1f1f1f;
 }
 
 /* ------------------------- Style for work page */
@@ -199,3 +268,12 @@ figcaption {
 }
 
 /* -------------------------------- Contact Form Style */
+
+/* -------------------------------- Resume Style */
+.resumeTitle {
+  margin-left: 39px;
+}
+
+.resumeList {
+  list-style-type: none;
+}

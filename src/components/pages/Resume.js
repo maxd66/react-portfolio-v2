@@ -2,10 +2,12 @@ function Resume() {
   return (
     <div>
       <h2>
-        <a href="#resume">Download My Full Resume</a>
+        <a href="#resume" className="resumeTitle">
+          Download My Full Resume
+        </a>
       </h2>
-      <h3>Front End Proficiencies:</h3>
-      <ul>
+      <h3 className="resumeTitle">Front End Proficiencies:</h3>
+      <ul className="resumeList">
         <li>HTML/CSS</li>
         <li>React</li>
         <li>jQuery</li>
@@ -14,8 +16,8 @@ function Resume() {
         <li>Bootstrap</li>
         <li>Bulma</li>
       </ul>
-      <h3>Back End Proficiencies:</h3>
-      <ul>
+      <h3 className="resumeTitle">Back End Proficiencies:</h3>
+      <ul className="resumeList">
         <li>Node</li>
         <li>MySql/Sequelize</li>
         <li>MongoDB/Mongoose</li>
